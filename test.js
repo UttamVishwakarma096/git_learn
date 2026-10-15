@@ -6,6 +6,7 @@ const pick = (items) => items[Math.floor(Math.random() * items.length)];
 
 console.log(`Today's quest: ${pick(heroes)} must ${pick(missions)} in ${pick(places)}.`);
 
+<<<<<<< Updated upstream
 const secret = Math.floor(Math.random() * 20) + 1;
 let guesses = 0;
 
@@ -27,3 +28,19 @@ process.stdin.on("data", (input) => {
     process.exit();
   }
 });
+=======
+const result = Math.random() < 0.5 ? "Heads" : "Tails";
+console.log(`You got: ${result}`);
+
+const color = `#${Math.floor(Math.random() * 0xffffff)
+  .toString(16)
+  .padStart(6, "0")}`;
+
+console.log(`Your random color is ${color}`);
+
+for (let number = 5; number > 0; number--) {
+  console.log(number);
+}
+
+console.log("Blast off! 🚀");
+>>>>>>> Stashed changes
